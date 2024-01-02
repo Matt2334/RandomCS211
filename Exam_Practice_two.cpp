@@ -1,4 +1,4 @@
-// Prompt
+// Prompt:
 
 // Create a program that manages a student database using vectors and pointers in C++. 
 // Define a Student class with private member variables for name, id, and grade. 
