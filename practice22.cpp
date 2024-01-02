@@ -18,12 +18,10 @@ class Dice{
     protected:
         int numSides;
 };
-class LoadedDice : public Dice{
+class LoadedDice: public Dice{
     public:
         LoadedDice(): Dice(){}
-
         LoadedDice(int numSides):Dice(numSides){}
-        
         int rollDice() const override{
             int chance = rand() % 100;
             if (chance >=51){
