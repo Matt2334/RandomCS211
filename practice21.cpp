@@ -14,7 +14,7 @@ class Account {
         void setBalance(double b){balance=b;}
         virtual string type() const { return "Account"; }
 };
-class CheckingAccount : public Account {
+class CheckingAccount: public Account {
     public:
         CheckingAccount(): Account(){}
         CheckingAccount(double b):Account(b){}
@@ -22,7 +22,7 @@ class CheckingAccount : public Account {
         void setBalance(double b){balance=b;}
         string type() const { return "CheckingAccount"; }
 };
-class SavingsAccount : public Account {
+class SavingsAccount: public Account {
     public:
         SavingsAccount(): Account(){}
         SavingsAccount(double b):Account(b){}
